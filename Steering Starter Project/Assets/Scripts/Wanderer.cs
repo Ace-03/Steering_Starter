@@ -2,19 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Separator : Kinematic
+public class Wanderer : Kinematic
 {
-    Separation myMoveType;
+    Wander myMoveType;
     Face myRotateType;
-    //LookWhereGoing myFleeRotateType;
-    public Kinematic[] myTargets;
+    LookWhereGoing myFleeRotateType;
 
     // Start is called before the first frame update
     void Start()
     {
-        myMoveType = new Separation();
+        myMoveType = new Wander();
         myMoveType.character = this;
-        myMoveType.targets = myTargets;
+        myMoveType.target = myTarget;
 
         myRotateType = new Face();
         myRotateType.character = this;
