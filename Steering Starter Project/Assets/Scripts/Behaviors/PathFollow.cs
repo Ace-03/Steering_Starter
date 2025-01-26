@@ -5,7 +5,6 @@ using UnityEngine;
 public class PathFollow : Seek
 {
     //public Kinematic character;
-    
 
     public GameObject[] targetPath;
 
