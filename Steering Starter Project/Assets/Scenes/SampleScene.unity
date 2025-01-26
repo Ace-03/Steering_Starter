@@ -2013,9 +2013,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   linearVelocity: {x: 0, y: 0, z: 0}
   angularVelocity: 0
-  maxSpeed: 10
+  maxSpeed: 2
   maxAngularVelocity: 45
-  myTarget: {fileID: 0}
+  myTarget: {fileID: 979704922}
+  targets:
+  - {fileID: 1085121195}
+  - {fileID: 2020384909}
+  - {fileID: 571283031}
+  - {fileID: 1538287562}
 --- !u!1 &2020384909
 GameObject:
   m_ObjectHideFlags: 0

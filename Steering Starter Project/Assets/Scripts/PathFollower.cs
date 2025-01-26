@@ -5,16 +5,19 @@ using UnityEngine;
 public class PathFollower : Kinematic
 {
     PathFollow myMoveType;
-    Face myRotateType;
+    LookWhereGoing myRotateType;
+    public GameObject[] targets; 
 
     // Start is called before the first frame update
     void Start()
     {
         myMoveType = new PathFollow();
         myMoveType.character = this;
-        myMoveType.target = myTarget;
+        myMoveType.targetPath = targets;
 
-        myRotateType = new Face();
+
+
+        myRotateType = new LookWhereGoing();
         myRotateType.character = this;
         myRotateType.target = myTarget;
     }
